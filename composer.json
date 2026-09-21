@@ -1,0 +1,18 @@
+{
+  "name": "oftalvista/website",
+  "description": "Sitio web y CMS de Oftalvista",
+  "type": "project",
+  "require": {
+    "php": ">=8.3",
+    "ext-pdo": "*",
+    "ext-pdo_pgsql": "*",
+    "ext-dom": "*",
+    "ext-fileinfo": "*"
+  },
+  "autoload": {
+    "psr-4": {"Oftalvista\\": "app/"}
+  },
+  "scripts": {
+    "test": "php tests/run.php"
+  }
+}
