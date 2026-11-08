@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Presenta una queja o reclamo ante Oftalvista mediante el Libro de Reclamaciones virtual.">
+  <meta name="robots" content="noindex, follow">
+  <title>Libro de Reclamaciones | Oftalvista</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/src/styles/site.css">
+  <link rel="stylesheet" href="/src/styles/reclamaciones.css">
+  <script type="module" src="/src/scripts/site.js" defer></script>
+<link rel="canonical" href="https://oftalvista.com.pe/libro-reclamaciones.html">
+  <script src="/loader-init.js"></script></head>
+<body class="complaints-page">
+  <main class="page-shell">
+    <header class="site-header site-header--scrolled" aria-label="Navegación principal">
+      <a class="brand" href="/index.html" aria-label="Oftalvista inicio"><img class="brand__mark" src="/assets/figma-brand-mark-v2.svg" alt=""><img class="brand__wordmark" src="/assets/figma-wordmark-v2.png" alt="Oftalvista"></a>
+      <nav class="main-nav" id="main-navigation" aria-label="Secciones"><a class="main-nav__link" href="/index.html">Inicio</a><a class="main-nav__link" href="/Servicios.html">Servicios</a><a class="main-nav__link" href="/opticas.html">Ópticas</a><a class="main-nav__link" href="/testimonios.html">Testimonios</a><a class="main-nav__link" href="/preguntas.html">Preguntas</a><a class="main-nav__link" href="/blog.html">Blog</a></nav>
+      <div class="header-actions"><a class="icon-button" href="tel:+51978662299" aria-label="Llamar a Oftalvista"><img src="/assets/figma-icon-call-v2.svg" alt=""></a><a class="appointment-button" href="https://wa.me/51978662299"><img src="/assets/figma-icon-calendar-v2.svg" alt=""><span>Reserva tu cita</span></a></div>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span></button>
+    </header>
+
+    <section class="complaints-intro" aria-labelledby="complaints-title">
+      <a class="complaints-back" href="/index.html">← Volver al inicio</a>
+      <span class="optics-kicker">Atención al consumidor</span>
+      <h1 id="complaints-title">Libro de Reclamaciones</h1>
+      <p>El Libro de Reclamaciones virtual está temporalmente no disponible. Para comunicarte con Oftalvista, llama al <a href="tel:+51978662299">+51 978 662 299</a> o visita nuestro establecimiento en Av. Juan Pardo de Zela 437, Lince.</p>
+      <div class="complaints-provider" data-provider-notice>
+        <strong>Identificación del proveedor</strong>
+        <span data-provider-name>LUZVISION S.A.C.</span>
+        <span>RUC: <span data-provider-ruc>20605702920</span></span>
+        <span data-provider-address>Av. Juan Pardo de Zela 437, Lince, Lima</span>
+        <span class="complaints-provider__pending" data-provider-status>El formulario se habilitará cuando se configure el registro seguro de las hojas de reclamación.</span>
+      </div>
+    </section>
+
+    <section class="complaints-card" aria-label="Hoja de reclamación" hidden>
+      <div class="complaints-form-heading"><span>Hoja de reclamación virtual</span><span>Campos con * son obligatorios</span></div>
+      <form data-complaint-form novalidate>
+        <div class="complaints-section-heading"><span>01</span><h2>Identificación del consumidor</h2></div>
+        <div class="complaints-fields">
+          <label class="complaints-field complaints-field--wide">Nombres y apellidos *<input name="consumer_name" autocomplete="name" maxlength="160" required></label>
+          <label class="complaints-field">Tipo de documento *<select name="document_type" required><option value="">Selecciona</option><option>DNI</option><option>Carné de extranjería</option><option>Pasaporte</option><option>Otro</option></select></label>
+          <label class="complaints-field">Número de documento *<input name="document_number" inputmode="numeric" maxlength="20" required></label>
+          <label class="complaints-field complaints-field--wide">Domicilio *<input name="address" autocomplete="street-address" maxlength="240" required></label>
+          <label class="complaints-field">Teléfono *<input name="phone" type="tel" autocomplete="tel" maxlength="30" required></label>
+          <label class="complaints-field">Correo electrónico *<input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+          <label class="complaints-field complaints-field--wide">Si eres menor de edad, nombres y apellidos de tu padre, madre o representante<input name="representative" maxlength="160"></label>
+        </div>
+
+        <div class="complaints-section-heading"><span>02</span><h2>Identificación del bien contratado</h2></div>
+        <div class="complaints-fields">
+          <label class="complaints-field">Tipo de bien *<select name="service_type" required><option value="">Selecciona</option><option>Producto</option><option>Servicio</option></select></label>
+          <label class="complaints-field">Monto reclamado (S/) <input name="amount" type="number" min="0" step="0.01" inputmode="decimal"></label>
+          <label class="complaints-field">Fecha de compra o servicio<input name="event_date" type="date"></label>
+          <label class="complaints-field complaints-field--wide">Descripción del producto o servicio *<input name="item_description" maxlength="240" required></label>
+        </div>
+
+        <div class="complaints-section-heading"><span>03</span><h2>Detalle de la queja o reclamo</h2></div>
+        <div class="complaints-fields">
+          <fieldset class="complaints-field complaints-field--wide complaints-type"><legend>Tipo de comunicación *</legend><label><input type="radio" name="claim_type" value="Reclamo" required> Reclamo: disconformidad relacionada con un producto o servicio.</label><label><input type="radio" name="claim_type" value="Queja" required> Queja: disconformidad con la atención recibida.</label></fieldset>
+          <label class="complaints-field complaints-field--wide">Detalle de lo ocurrido *<textarea name="detail" rows="5" maxlength="5000" required></textarea></label>
+          <label class="complaints-field complaints-field--wide">¿Qué solución solicitas? *<textarea name="request" rows="4" maxlength="3000" required></textarea></label>
+          <fieldset class="complaints-field complaints-field--wide complaints-type"><legend>Medio para recibir la respuesta *</legend><label><input type="radio" name="response_channel" value="Correo electrónico" required checked> Correo electrónico</label><label><input type="radio" name="response_channel" value="Domicilio" required> Domicilio indicado</label></fieldset>
+          <label class="complaints-privacy complaints-field--wide"><input type="checkbox" name="privacy_acknowledged" required><span>He leído la <a href="/politica-de-privacidad.html">Política de Privacidad</a> y autorizo el uso de mis datos para registrar y atender esta queja o reclamo. *</span></label>
+          <label class="complaints-honeypot" aria-hidden="true">No completar<input name="website" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <p class="complaints-form-note">La presentación de esta hoja no impide acudir a otras vías de solución ni es requisito para presentar una denuncia ante Indecopi.</p>
+        <p class="complaints-message" data-complaint-message role="status" aria-live="polite"></p>
+        <button class="complaints-submit" type="submit" disabled>Formulario temporalmente no disponible</button>
+      </form>
+      <section class="complaints-receipt" data-complaint-receipt hidden aria-live="polite"></section>
+    </section>
+
+    <footer class="site-footer" id="contacto"><div class="site-footer__inner">
+      <section class="footer-brand"><a class="footer-logo" href="/index.html"><img class="footer-logo__mark" src="/assets/figma-brand-mark-footer.svg" alt=""><img class="footer-logo__wordmark" src="/assets/figma-wordmark-v2.png" alt="Oftalvista"></a><p>Cuidado integral de la salud visual.</p><h3>Lunes a sábado</h3><div class="footer-row"><img src="/assets/figma-icon-time.svg" alt=""><span>de 9:00 a.m. a 7:30 p.m.</span></div></section>
+      <section class="footer-column"><h3>Información de contacto</h3><a class="footer-row" href="https://wa.me/51978662299"><img src="/assets/figma-icon-whatsapp.svg" alt=""><span>+51 978 662 299</span></a><a class="footer-row" href="https://maps.google.com/?q=Av.%20Juan%20Pardo%20de%20Zela%20437%2C%20Lince"><img src="/assets/figma-icon-location.svg" alt=""><span>Av. Juan Pardo de Zela 437, Lince</span></a></section>
+      <nav class="footer-column footer-nav"><h3>Navegación</h3><a href="/index.html">Inicio</a><a href="/Servicios.html">Servicios</a><a href="/opticas.html">Ópticas</a><a href="/blog.html">Blog</a></nav>
+      <nav class="footer-column footer-legal"><h3>Legal</h3><a href="/terminos-y-condiciones.html">Términos y condiciones</a><a href="/politica-de-privacidad.html">Política de Privacidad</a><a class="footer-complaints-badge" href="/libro-reclamaciones.html" aria-label="Abrir Libro de Reclamaciones"><img src="/assets/libro-reclamaciones.png" alt="Libro de Reclamaciones"></a></nav>
+    </div></footer>
+  </main>
+</body>
+</html>
+
+

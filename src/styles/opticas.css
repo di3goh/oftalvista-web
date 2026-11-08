@@ -1,0 +1,89 @@
+﻿.opticas-page { background: #f6f4ef; }
+.opticas-page .site-header { background: #fff; border-radius: 44px; color: var(--ink); }
+.opticas-page .brand__mark, .opticas-page .brand__wordmark { filter: brightness(0); }
+.opticas-page .main-nav { width: 650px; }
+.optics-hero { align-items: stretch; display: grid; grid-template-columns: 1.05fr .95fr; margin: 0 auto; max-width: var(--content-width); min-height: 720px; padding: 112px 22px 44px; }
+.optics-hero__copy { align-items: flex-start; background: #12110f; border-radius: 34px 0 0 34px; color: #fff; display: flex; flex-direction: column; justify-content: center; padding: clamp(42px, 6vw, 96px); }
+.optics-kicker { color: var(--accent); font-size: 13px; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; }
+.optics-hero h1 { font-size: clamp(48px, 5.5vw, 82px); font-weight: 500; letter-spacing: -.045em; line-height: .97; margin: 20px 0 25px; max-width: 760px; }
+.optics-hero p { color: #d3d0c9; font-size: 19px; line-height: 1.55; margin: 0; max-width: 580px; }
+.optics-hero__button { align-items: center; background: var(--accent); border-radius: 999px; display: flex; font-size: 16px; font-weight: 650; gap: 24px; margin-top: 42px; padding: 15px 21px; }
+.optics-hero__visual { align-items: center; background: linear-gradient(145deg, #eee7da, #d7cab6); border-radius: 0 34px 34px 0; display: flex; justify-content: center; overflow: hidden; position: relative; }
+.optics-hero__visual > span { bottom: 28px; color: #716552; font-size: 13px; letter-spacing: .15em; position: absolute; text-transform: uppercase; }
+.hero-glasses { height: 190px; position: relative; transform: rotate(-6deg); width: min(78%, 560px); }
+.hero-glasses i { border: 18px solid #221f1a; border-radius: 45% 45% 50% 50%; height: 155px; position: absolute; top: 20px; width: 230px; }
+.hero-glasses i:first-child { left: 0; }.hero-glasses i:nth-child(2) { right: 0; }
+.hero-glasses b { background: #221f1a; height: 18px; left: calc(50% - 45px); position: absolute; top: 65px; width: 90px; }
+.catalog-section { margin: 0 auto; max-width: 1480px; padding: 72px 28px 112px; }
+.catalog-heading { align-items: end; display: flex; justify-content: space-between; }
+.catalog-heading h2 { font-size: clamp(38px, 4vw, 58px); font-weight: 500; letter-spacing: -.035em; line-height: 1; margin: 13px 0 0; }
+.catalog-heading > p { color: #716c64; font-size: 16px; line-height: 1.65; margin: 0 0 4px; max-width: 420px; }
+.catalog-toolbar { align-items: center; border-bottom: 1px solid #ded9d0; display: flex; justify-content: space-between; margin-top: 42px; padding-bottom: 20px; }
+.catalog-filters { display: flex; flex-wrap: wrap; gap: 10px; }
+.catalog-filters button { background: rgba(255,255,255,.45); border: 1px solid #d8d2c8; border-radius: 999px; color: #625e57; cursor: pointer; font: inherit; font-size: 14px; padding: 11px 20px; transition: background 180ms ease, border-color 180ms ease, color 180ms ease; }
+.catalog-filters button:hover { border-color: #a79c8b; color: #1d1b18; }
+.catalog-filters button.is-active { background: #24211d; border-color: #24211d; color: #fff; }
+.catalog-toolbar p { color: #777168; font-size: 13px; letter-spacing: .025em; margin: 0; }
+.catalog-demo-note { background: #fff4e6; border-radius: 12px; color: #8b4a00; font-size: 13px; margin: 18px 0 0; padding: 11px 14px; }
+.products-grid { display: grid; gap: 30px 24px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 30px; }
+.product-card { background: #fff; border: 1px solid rgba(46,39,28,.1); border-radius: 22px; box-shadow: 0 5px 22px rgba(39,31,20,.035); overflow: hidden; transition: border-color 160ms ease; }
+.product-card:hover, .product-card:focus-within { border-color: #171614; }
+.product-card__open { color: inherit; display: block; height: 100%; text-decoration: none; }
+.product-card__open:focus-visible { outline: 3px solid #a96626; outline-offset: -3px; }
+.product-card__media { aspect-ratio: 1.12 / 1; background: #f1efe9; overflow: hidden; position: relative; }
+.product-card__media > img { height: 100%; object-fit: cover; object-position: center; padding: 0; transform: scale(1.18); width: 100%; }
+.product-card__availability { backdrop-filter: blur(10px); background: rgba(255,255,255,.78); border: 1px solid rgba(255,255,255,.8); border-radius: 99px; color: #48433c; font-size: 11px; left: 14px; letter-spacing: .025em; padding: 7px 11px; position: absolute; top: 14px; }
+.product-card__placeholder { align-items: center; display: flex; height: 100%; justify-content: center; }
+.product-card__placeholder span { border: 10px solid #292723; border-radius: 45%; height: 72px; position: relative; width: 115px; }
+.product-card__placeholder span::after { border: 10px solid #292723; border-radius: 45%; content: ""; height: 72px; left: 112px; position: absolute; top: -10px; width: 115px; }
+.product-card__placeholder span::before { background: #292723; content: ""; height: 10px; left: 100px; position: absolute; top: 22px; width: 25px; }
+.product-card__body { padding: 22px 22px 21px; }
+.product-card__eyebrow { align-items: center; color: #756e64; display: flex; font-size: 11px; justify-content: space-between; letter-spacing: .09em; text-transform: uppercase; }
+.product-card__eyebrow span:last-child { background: #f4f1ec; border-radius: 99px; color: #61594f; letter-spacing: .04em; padding: 6px 9px; }
+.product-card h2 { color: #211f1b; font-size: clamp(22px, 1.7vw, 27px); font-weight: 550; letter-spacing: -.03em; line-height: 1.15; margin: 15px 0 7px; }
+.product-card p { color: #716b62; font-size: 14px; line-height: 1.5; margin: 0 0 20px; min-height: 42px; }
+.product-card__details { align-items: center; border-top: 1px solid #eeeae4; color: #81796e; display: flex; font-size: 11px; justify-content: space-between; padding-top: 16px; }
+.product-card__details span:last-child { align-items: center; background: #211f1b; border: 1px solid #211f1b; border-radius: 999px; color: #fff; display: inline-flex; font-size: 12px; font-weight: 650; gap: 10px; justify-content: center; letter-spacing: .01em; min-height: 40px; padding: 0 15px; text-transform: none; transition: background 160ms ease, color 160ms ease; }
+.product-card:hover .product-card__details span:last-child, .product-card:focus-within .product-card__details span:last-child { background: #fff; color: #211f1b; }
+
+.product-card__body > a { align-items: center; color: #c86600; display: flex; font-weight: 650; justify-content: space-between; margin-top: 22px; }
+.product-card__body > p { min-height: 0; }
+.product-detail { background: #fff; border-radius: 32px; margin: 0 auto 110px; max-width: var(--section-width); padding: clamp(24px, 5vw, 64px); scroll-margin-top: 28px; }
+.product-detail[hidden] { display: none; }
+.product-detail--page { margin-top: 112px; }
+.product-breadcrumb { color: #777168; display: flex; font-size: 14px; gap: 10px; margin-bottom: 38px; }
+.product-breadcrumb a { color: #c86600; }
+.product-detail__back-link { display: inline-block; margin-top: 38px; }
+.product-detail__inner { max-width: 1280px; margin: auto; }
+.product-detail__back { background: transparent; border: 0; color: #625e57; cursor: pointer; font: inherit; padding: 0; }
+.product-detail__heading { align-items: end; display: flex; justify-content: space-between; gap: 30px; margin: 38px 0 32px; }
+.product-detail__heading h2 { font-size: clamp(42px, 5vw, 68px); font-weight: 500; letter-spacing: -.045em; line-height: 1; margin: 12px 0; }
+.product-detail__heading p { color: #625e57; margin: 0; }
+.product-detail__consult { background: #111; border-radius: 999px; color: #fff; font-weight: 650; padding: 15px 20px; white-space: nowrap; }
+.product-variants { display: grid; gap: 20px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.product-variant { background: #f6f4ef; border-radius: 18px; margin: 0; overflow: hidden; }
+.product-variant img { aspect-ratio: 1 / 1; display: block; object-fit: cover; width: 100%; }
+.product-variant figcaption { color: #625e57; display: flex; font-size: 12px; justify-content: space-between; padding: 13px 15px; }
+.product-gallery { min-width: 0; }
+.product-gallery__main { align-items: center; aspect-ratio: 1 / .82; background: #fff; display: flex; justify-content: center; overflow: hidden; }
+.product-gallery__main img { height: 100%; object-fit: contain; width: 100%; }
+.product-gallery__thumbs { display: flex; gap: 12px; margin-top: 18px; overflow-x: auto; padding: 3px 2px 10px; }
+.product-gallery__thumb { background: #fff; border: 1px solid #e1ddd6; border-radius: 10px; cursor: pointer; flex: 0 0 78px; overflow: hidden; padding: 0; }
+.product-gallery__thumb[aria-pressed="true"] { border: 2px solid #c86600; }
+.product-gallery__thumb img { aspect-ratio: 1; display: block; object-fit: contain; width: 100%; }
+.product-detail__layout { display: grid; gap: clamp(36px, 6vw, 88px); grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr); }
+.product-detail__info h1 { font-size: clamp(34px, 4vw, 52px); font-weight: 500; letter-spacing: -.035em; line-height: 1.08; margin: 0 0 15px; }
+.product-detail__description { color: #625e57; font-size: 17px; line-height: 1.6; margin: 0 0 28px; }
+.product-detail__actions { display: grid; gap: 12px; margin-top: 30px; }
+.product-detail__actions a { border-radius: 8px; font-weight: 650; padding: 15px 20px; text-align: center; }
+.product-detail__consult { background: #111; color: #fff; }
+.product-detail__back-action { border: 1px solid #d6d0c7; color: #333; }
+.product-detail__specs { border-top: 1px solid #e7e2da; list-style: none; margin: 28px 0 0; padding: 18px 0 0; }
+.product-detail__specs li { color: #625e57; line-height: 1.8; }
+.catalog-empty { grid-column: 1/-1; padding: 50px 0; text-align: center; }
+.optics-cta { align-items: center; background: var(--accent); border-radius: 32px; display: flex; justify-content: space-between; margin: 0 auto 90px; max-width: var(--section-width); padding: 52px 60px; }
+.optics-cta .optics-kicker { color: #fff3e5; }.optics-cta h2 { color: #fff; font-size: 38px; font-weight: 500; margin: 10px 0 0; max-width: 700px; }
+.optics-cta > a { background: #111; border-radius: 999px; color: #fff; font-weight: 650; padding: 16px 24px; white-space: nowrap; }
+@media (max-width: 1100px) { .opticas-page .main-nav { width: 540px; font-size: 14px; }.products-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; }.product-card__media { aspect-ratio: 1.12 / 1; } }
+@media (max-width: 760px) { .catalog-section { padding: 52px 16px 72px; }.catalog-heading, .catalog-toolbar, .optics-cta { align-items: flex-start; flex-direction: column; gap: 20px; }.catalog-heading h2 { font-size: clamp(34px, 9vw, 46px); }.catalog-toolbar { margin-top: 30px; }.catalog-filters { gap: 8px; }.catalog-filters button { padding: 9px 15px; }.products-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px 11px; margin-top: 22px; }.product-card { border-radius: 16px; }.product-card__media { aspect-ratio: 1 / .92; }.product-card__media > img { transform: scale(1.12); }.product-card__availability { font-size: 9px; left: 8px; padding: 5px 8px; top: 8px; }.product-card__body { padding: 13px 12px 14px; }.product-card__eyebrow { font-size: 9px; letter-spacing: .025em; }.product-card__eyebrow span:last-child { padding: 5px 7px; }.product-card h2 { font-size: clamp(16px, 4.2vw, 20px); line-height: 1.15; margin: 10px 0 6px; }.product-card p { font-size: 12px; min-height: 36px; margin-bottom: 13px; }.product-card__details { font-size: 9px; padding-top: 11px; }.product-card__details span:last-child { font-size: 10px; min-height: 36px; padding: 0 11px; }.optics-cta { border-radius: 0; margin-bottom: 0; padding: 45px 24px; }.optics-cta h2 { font-size: 31px; }.product-detail { border-radius: 0; margin-bottom: 60px; padding: 28px 18px; }.product-detail__layout { grid-template-columns: 1fr; }.product-gallery__main { aspect-ratio: 1; }.product-gallery__thumb { flex-basis: 64px; }.product-detail__info h1 { font-size: 34px; } }
+
